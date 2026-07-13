@@ -23,22 +23,20 @@ Before you begin, ensure you have the following installed:
 
 ## 🛠 Installation & Setup
 
-⚠️ **Important Note on Dependencies:**
-This project relies on custom integration packages (iMotions & Varjo) that are **not included** in this repository due to licensing/size constraints. You must add them manually.
-
 1.  **Clone the Repository**
     ```bash
     git clone [https://github.com/YOUR_USERNAME/unity-attention-integration.git](https://github.com/YOUR_USERNAME/unity-attention-integration.git)
     ```
 
-2.  **Restore Local Packages**
-    * Navigate to the `LocalPackages` folder in the project root.
-    * Paste the required integration folder (e.g., `com.threespacelab.imotions.varjointegration@...`) into this directory.
-    * *Note: See `LocalPackages/README.txt` for specific version details.*
-
-3.  **Open in Unity**
+2.  **Open in Unity**
     * Add the project to Unity Hub.
-    * Open the project. Unity will automatically resolve dependencies via the `manifest.json` pointing to your `LocalPackages` folder.
+    * Open the project. This is all that's needed for **Desktop** or **Meta Quest 2/3** mode.
+
+3.  **Varjo eye-tracking only:** if you are targeting a Varjo headset, the eye-tracking
+    integration relies on iMotions/Varjo packages that are **not included** in this
+    repository (licensing/size constraints) and must be added manually. See
+    [`docs/VARJO_SETUP.md`](docs/VARJO_SETUP.md) for the steps. Desktop and Meta Quest
+    users can skip this entirely.
 
 ## 🥽 Hardware Configuration
 

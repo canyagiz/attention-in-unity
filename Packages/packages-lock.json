@@ -1,17 +1,5 @@
 {
   "dependencies": {
-    "com.threespacelab.imotions.core": {
-      "version": "file:../LocalPackages/com.threespacelab.imotions.varjointegration@a64044b3a4dc/Packages~/com.threespacelab.imotions.core-1.0.3.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
-    "com.threespacelab.imotions.varjointegration": {
-      "version": "file:../LocalPackages/com.threespacelab.imotions.varjointegration@a64044b3a4dc",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.collab-proxy": {
       "version": "2.1.0",
       "depth": 0,
@@ -246,14 +234,6 @@
         "com.unity.xr.legacyinputhelpers": "2.1.2"
       },
       "url": "https://packages.unity.com"
-    },
-    "com.varjo.xr": {
-      "version": "file:../LocalPackages/com.threespacelab.imotions.varjointegration@a64044b3a4dc/Packages~/com.varjo.xr-2.3.0.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.unity.xr.management": "3.2.13"
-      }
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

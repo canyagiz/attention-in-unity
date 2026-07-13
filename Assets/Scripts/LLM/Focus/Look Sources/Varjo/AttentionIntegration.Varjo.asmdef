@@ -1,0 +1,26 @@
+{
+    "name": "AttentionIntegration.Varjo",
+    "rootNamespace": "",
+    "references": [
+        "AttentionIntegration.Core",
+        "Varjo.XR",
+        "Three.iMotions.VarjoIntegration"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "ATTN_HAVE_VARJO"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.varjo.xr",
+            "expression": "",
+            "define": "ATTN_HAVE_VARJO"
+        }
+    ],
+    "noEngineReferences": false
+}
