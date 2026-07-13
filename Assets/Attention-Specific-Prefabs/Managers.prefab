@@ -1,0 +1,473 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5216423691032499220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5216423691032499219}
+  - component: {fileID: 5216423691032499218}
+  - component: {fileID: 5216423691032499217}
+  m_Layer: 0
+  m_Name: ControllerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5216423691032499219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691032499220}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5216423692196189004}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5216423691032499218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691032499220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a890cb064cd298d409d313f8f94e220f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigRoot: {fileID: 0}
+  inputSource: 5
+  moveSpeed: 1
+--- !u!114 &5216423691032499217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691032499220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de4a3429038010449d75649137dbfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerNode: 4
+--- !u!1 &5216423691460331042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5216423691460331040}
+  - component: {fileID: 5216423691460331041}
+  - component: {fileID: 5216423691460331053}
+  - component: {fileID: 5216423691460331054}
+  - component: {fileID: 5216423691460331055}
+  m_Layer: 0
+  m_Name: LLMManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5216423691460331040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691460331042}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 21.700237, y: -5.7831154, z: -11.199843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5216423692113958485}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5216423691460331041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691460331042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230ee47980f442e4ca6bff63629e5954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  llmPanelPrefab: {fileID: 603671509697861654, guid: 2a8aeaf9aab111b4e8ae04a6448eb8f1, type: 3}
+  distance: 0.5
+--- !u!114 &5216423691460331053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691460331042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab968622294b6844f8b6582192c985e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiKey: 
+  endpoint: https://api.openai.com/v1/chat/completions
+  systemPrompt: "You will be shown a screenshot from a 3D retail scene.\r\n\r\nYour
+    tasks are:\r\n1. Briefly describe the overall environment (one short paragraph).\r\n2.
+    Then, carefully analyze the object that is directly centered in the screen space
+    \u2014 that is, the object visually located at the middle of the image, regardless
+    of camera angle or depth.\r\n\r\nFocus only on this object. Ignore nearby products
+    even if they are similar or appear in the same shelf. Use any visible label,
+    text, shape, packaging style, or color as clues. Do NOT guess based on shelf
+    labels or adjacent items.\r\n\r\nReturn your answer in two clearly separated
+    paragraphs: one for environment, one for the centered object.  \r\nLimit total
+    response to 200 words\r\n"
+  targetObject: {fileID: 0}
+  captureSettings:
+    width: 512
+    height: 512
+    resolution: 70
+    fieldOfView: 40
+    backgroundColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+--- !u!114 &5216423691460331054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691460331042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61e4bef0e04fab448328dcbf8c20c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiKey: 
+  endpoint: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+  systemPrompt: "You will be shown a screenshot from a 3D retail scene.\r\n\r\nYour
+    tasks are:\r\n1. Briefly describe the overall environment (one short paragraph).\r\n2.
+    Then, carefully analyze the object that is directly centered in the screen space
+    \u2014 that is, the object visually located at the middle of the image, regardless
+    of camera angle or depth.\r\n\r\nFocus only on this object. Ignore nearby products
+    even if they are similar or appear in the same shelf. Use any visible label,
+    text, shape, packaging style, or color as clues. Do NOT guess based on shelf
+    labels or adjacent items.\r\n\r\nReturn your answer in two clearly separated
+    paragraphs: one for environment, one for the centered object.  \r\nLimit total
+    response to 200 words\r\n"
+  captureSettings:
+    width: 512
+    height: 512
+    resolution: 100
+    fieldOfView: 40
+    backgroundColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+--- !u!114 &5216423691460331055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691460331042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ec156b9fff9624c862f966789104df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiKey: 
+  endpoint: https://api.groq.com/openai/v1/chat/completions
+  model: llama-3.3-70b-versatile
+  systemPrompt: "You are a visual assistant helping users understand what a specific
+    object in a 3D scene might be.\r\n\r\nYou will be provided:\r\n- The object's
+    physical properties (name, surface area, volume)\r\n- A visual description based
+    on a screenshot, including appearance and visible details\r\n\r\nYour task:\r\n-
+    Focus only on the object that is directly in the center of the image\r\n- Use
+    its physical size, shape, packaging, and any visible text or design to guess
+    what it might be\r\n- Present your explanation as if you're describing it to
+    a general user\u2014not a developer\r\n\r\nDo not describe the surrounding environment.
+    Do not mention other products or shelf labels.  \r\nAvoid quoting technical names.
+    Focus only on what the centered object looks like and what it could be.\r\n\r\nLimit
+    your response to a single, clear paragraph under 150 words.\r\n"
+  visualAnalyzerComponent: {fileID: 5216423691460331054}
+--- !u!1 &5216423691649857723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5216423691649857722}
+  - component: {fileID: 5216423691649857721}
+  - component: {fileID: 5216423691649857700}
+  - component: {fileID: 5216423691649857698}
+  - component: {fileID: 5216423691649857699}
+  - component: {fileID: 5216423691649857703}
+  - component: {fileID: 5216423691649857701}
+  - component: {fileID: 5216423691649857702}
+  m_Layer: 0
+  m_Name: LookTrackerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5216423691649857722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691649857723}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.750081, y: -1.3954444, z: -5.0555744}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5216423692113958485}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5216423691649857721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691649857723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3a3591ab1e47144a67bd5f6b081e3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookSourceBehaviours:
+  - {fileID: 5216423691649857699}
+  - {fileID: 5216423691649857698}
+  visualAnalyzerBehaviour: {fileID: 5216423691460331054}
+  rangeOfTrack: 5
+  toggleKey: 108
+--- !u!114 &5216423691649857700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691649857723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d259f6c71b134264fb71d411c31bc5a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableQuestInteraction: 1
+--- !u!114 &5216423691649857698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691649857723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704b902b39d5bcb4e9ec6a9174474a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTransform: {fileID: 0}
+  maxDistance: 5
+  showReticle: 1
+  reticlePrefab: {fileID: 807653515059922967, guid: f1bace585082fda4abe97111f79b7208, type: 3}
+  defaultDistance: 5
+--- !u!114 &5216423691649857699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691649857723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb546d3482d8a24ba12717aee400208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHandTransform: {fileID: 0}
+  leftTriggerAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 9f1feb8b-d129-40f3-a29f-e1b46f20f8b5
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rightHandTransform: {fileID: 0}
+  rightTriggerAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: cce9c5c7-c89b-4f11-833e-36a0797cf5ff
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &5216423691649857703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691649857723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 141f0987ab1cf334fbb3a17627cbeab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerTransform: {fileID: 0}
+  triggerAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Trigger
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 3283d284-6c7f-41aa-b3b6-3572908fbac3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &5216423691649857701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691649857723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b394c5f6a7f328041ba74f107493d3fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
+--- !u!114 &5216423691649857702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691649857723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509280b825531f14184e8862d344c3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headTransform: {fileID: 0}
+--- !u!1 &5216423691763472070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5216423691763472069}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5216423691763472069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423691763472070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.566536, y: 1.766751, z: 5.881413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5216423692113958485}
+  - {fileID: 5216423692196189004}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5216423692113958486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5216423692113958485}
+  m_Layer: 0
+  m_Name: PipelineManagers (Common for All Runtimes)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5216423692113958485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423692113958486}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5216423691460331040}
+  - {fileID: 5216423691649857722}
+  m_Father: {fileID: 5216423691763472069}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5216423692196189005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5216423692196189004}
+  m_Layer: 0
+  m_Name: VarjoSpecificManagers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5216423692196189004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216423692196189005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5216423691032499219}
+  m_Father: {fileID: 5216423691763472069}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

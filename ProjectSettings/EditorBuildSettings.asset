@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes: []
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 55b49fb70ceeb2240b512bbcc8361493, type: 2}
+    Varjo.XR.Settings: {fileID: 11400000, guid: 6dbee0be8150e714ba1254e0e8069d94, type: 2}
+    com.threespacelab.imotions.varjo.settings: {fileID: 11400000, guid: 9053c845ddba879438b3d411d0c727c8, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: ea28bfeee52800d4c978f6f2a21359b5, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1fe36c64a3c23d44da6199ceac373910, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f72a2a3ecbb87764394b6f28df250406, type: 2}
